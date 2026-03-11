@@ -1,13 +1,15 @@
 /// <reference types="vite/client" />
 
 declare module 'gsap-trial/SplitText' {
-  export class SplitText {
+  class SplitText {
     constructor(target: any, vars?: any);
     chars: Element[];
     words: Element[];
     lines: Element[];
     revert(): void;
   }
+  export default SplitText;
+  export { SplitText };
 }
 
 declare module 'gsap-trial/ScrollSmoother' {
