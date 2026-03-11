@@ -1,8 +1,9 @@
-// @ts-ignore
-import SplitText from 'gsap-trial/SplitText';
+import gsap from 'gsap';
+import SplitText from 'gsap/SplitText';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Split: any = SplitText;
-import gsap from "gsap";
+
+gsap.registerPlugin(SplitText);
 import { smoother } from "../Navbar";
 
 export function initialFX() {

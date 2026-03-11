@@ -1,8 +1,7 @@
-import { gsap } from "gsap";
+import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
-// @ts-ignore
-import SplitText from 'gsap-trial/SplitText';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import SplitText from 'gsap/SplitText';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Split: any = SplitText;
 
@@ -11,7 +10,7 @@ interface ParaElement extends HTMLElement {
   split?: any;
 }
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
+gsap.registerPlugin(ScrollSmoother, SplitText, ScrollTrigger);
 
 export default function setSplitText() {
   ScrollTrigger.config({ ignoreMobileResize: true });
