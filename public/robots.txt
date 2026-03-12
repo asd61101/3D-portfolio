@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asd61101.github.io/3D-portfolio/sitemap.xml
