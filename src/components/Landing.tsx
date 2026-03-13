@@ -12,6 +12,7 @@ const Landing = ({ children }: PropsWithChildren) => {
               ASAD UR
               <br />
               <span>REHMAN</span>
+              <span className="sr-only">Asad ur Rehman - Full Stack Developer and MERN Stack Developer available for USA, UK, and Europe clients</span>
             </h1>
           </div>
           <div className="landing-info">
